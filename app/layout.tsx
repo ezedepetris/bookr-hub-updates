@@ -106,7 +106,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col gradient-background font-sans">
+      <body className="min-h-screen flex flex-col gradient-background font-sans">
         {children}
       </body>
     </html>

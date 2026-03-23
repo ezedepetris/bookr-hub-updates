@@ -15,7 +15,7 @@ export default async function Changelog({ searchParams }: PageProps) {
   const BASE_URL = "https://www.bookrhub.com";
 
   return (
-    <main className="flex-1">
+    <main className="flex-1 flex flex-col">
       <header className="border-b border-[#e7e5e4] bg-white/80 backdrop-blur-sm px-6 py-12">
         <div className="mx-auto max-w-3xl">
           <Link
@@ -109,7 +109,7 @@ export default async function Changelog({ searchParams }: PageProps) {
         ))}
       </div>
 
-      <footer className="border-t border-[#e7e5e4] bg-white/80 backdrop-blur-sm px-6 py-8">
+      <footer className="mt-auto border-t border-[#e7e5e4] bg-white/80 backdrop-blur-sm px-6 py-8">
         <div className="mx-auto max-w-3xl text-center text-sm text-[#a8a29e]">
           <p>
             {dict.footer}{" "}

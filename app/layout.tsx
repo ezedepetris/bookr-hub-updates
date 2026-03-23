@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://updates.bookrhub.com"),
+  icons: {
+    icon: "/icon.svg",
+  },
   title: {
     default: "BookrHub Updates - New Features, Improvements & News",
     template: "%s | BookrHub Updates",

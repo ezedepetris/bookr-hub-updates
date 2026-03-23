@@ -71,7 +71,7 @@ export default async function Changelog({ searchParams }: PageProps) {
           <article
             key={update.slug}
             className={index === 0 
-              ? "rounded-2xl border border-[#e7e5e4] bg-white p-8" 
+              ? "rounded-2xl border border-[#e7e5e4] bg-white px-8 py-8 -mx-4" 
               : "pt-6 pb-12 border-b border-[#e7e5e4]"}
           >
             <div className="mb-4 flex items-center gap-3">

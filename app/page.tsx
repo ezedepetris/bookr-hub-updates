@@ -1,65 +1,127 @@
+import Link from "next/link";
 import Image from "next/image";
+import { getDictionary, getUpdates } from "./lib/dictionary";
 
-export default function Home() {
+interface PageProps {
+  searchParams: Promise<{ locale?: string }>;
+}
+
+export default async function Changelog({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const locale = params.locale === "es" ? "es" : "en";
+  const dict = getDictionary(locale);
+  const updates = getUpdates(locale);
+  const updateList = Object.entries(updates).map(([slug, data]) => ({ slug, ...data }));
+  const BASE_URL = "https://www.bookrhub.com";
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="flex-1">
+      <header className="border-b border-[#e7e5e4] bg-white/80 backdrop-blur-sm px-6 py-12">
+        <div className="mx-auto max-w-3xl">
+          <Link
+            href={`${BASE_URL}/?locale=${locale}`}
+            className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#57534e] transition-colors hover:text-[#4f46e5]"
+          >
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            {dict.backToBookrHub}
+          </Link>
+          <div className="flex items-center gap-4 mb-6">
+            <Image
+              src="/icon.svg"
+              alt="BookrHub"
+              width={48}
+              height={48}
+              className="rounded-xl"
+            />
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight text-[#1c1917]">
+                {dict.updates}
+              </h1>
+            </div>
+          </div>
+          <p className="text-lg text-[#57534e] mb-6">
+            {dict.updatesSubtitle}
+          </p>
+          <div className="flex items-center justify-between">
+            <div></div>
+            <Link
+              href={`?locale=${locale === "en" ? "es" : "en"}`}
+              className="inline-flex items-center rounded-lg border border-[#e7e5e4] bg-white px-3 py-2 text-sm font-medium text-[#57534e] transition-colors hover:border-[#4f46e5] hover:text-[#4f46e5]"
             >
-              Learning
-            </a>{" "}
-            center.
+              {dict.localeSwitch}
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      <div className="mx-auto max-w-3xl px-6 py-12 gradient-background">
+        {updateList.map((update, index) => (
+          <article
+            key={update.slug}
+            className={index === 0 
+              ? "rounded-2xl border border-[#e7e5e4] bg-white p-8" 
+              : "pt-6 pb-12 border-b border-[#e7e5e4]"}
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <span className="inline-flex items-center rounded-full bg-[#eef2ff] px-2.5 py-0.5 text-xs font-medium text-[#4f46e5]">
+                {dict.categories[update.category as keyof typeof dict.categories]}
+              </span>
+              <time className="text-sm text-[#a8a29e]">{update.date}</time>
+            </div>
+            <Link href={`/${update.slug}?locale=${locale}`}>
+              <h2 className="text-xl font-semibold text-[#1c1917] hover:text-[#4f46e5]">
+                {update.title}
+              </h2>
+            </Link>
+            <p className="mt-3 text-[#57534e]">{update.excerpt}</p>
+            <Link
+              href={`/${update.slug}?locale=${locale}`}
+              className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#4f46e5] hover:text-[#3730a3]"
+            >
+              {dict.readMore}
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </Link>
+          </article>
+        ))}
+      </div>
+
+      <footer className="border-t border-[#e7e5e4] bg-white/80 backdrop-blur-sm px-6 py-8">
+        <div className="mx-auto max-w-3xl text-center text-sm text-[#a8a29e]">
+          <p>
+            {dict.footer}{" "}
+            <Link
+              href={`${BASE_URL}/?locale=${locale}`}
+              className="font-medium text-[#4f46e5] hover:text-[#3730a3]"
+            >
+              {dict.tryBookrHub}
+            </Link>
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </footer>
+    </main>
   );
 }

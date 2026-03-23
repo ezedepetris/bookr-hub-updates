@@ -23,9 +23,37 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const update = getUpdate(slug, "en");
+
+  if (!update) {
+    return {
+      title: "Update Not Found",
+      description: "This update was not found.",
+    };
+  }
+
   return {
-    title: "Update Not Found",
-    description: "This update was not found.",
+    title: update.title,
+    description: update.excerpt,
+    openGraph: {
+      title: update.title,
+      description: update.excerpt,
+      type: "article",
+      publishedTime: update.date,
+      url: `https://updates.bookrhub.com/${slug}`,
+      siteName: "BookrHub Updates",
+    },
+    alternates: {
+      canonical: `https://updates.bookrhub.com/${slug}`,
+      languages: {
+        en: `https://updates.bookrhub.com/${slug}?locale=en`,
+        es: `https://updates.bookrhub.com/${slug}?locale=es`,
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

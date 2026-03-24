@@ -41,369 +41,171 @@ export function getDictionary(locale: string) {
 
 export const updates = {
   en: {
-    "launch-new-booking-calendar": {
-      date: "March 23, 2026",
+    "split-opening-hours": {
+      date: "March 24, 2026",
       category: "New Feature",
-      title: "Launch: New Booking Calendar with Real-Time Availability",
+      title: "Set Multiple Opening Hours Per Day with Split Shifts",
       excerpt:
-        "We've completely rebuilt our booking calendar from the ground up with real-time availability, complex scheduling, and calendar sync support.",
-      content: `We are excited to announce the launch of our completely rebuilt booking calendar. After months of development and feedback from hundreds of salons, spas, and barbershops, we have created a scheduling experience that handles the complexity of real appointment businesses.
+        "Configure your business hours with multiple time blocks per day. Perfect for salons and barbershops with lunch breaks or split operating schedules.",
+      content: `We're excited to introduce split opening hours for BookrHub. Now you can configure multiple time blocks per day to match your real operating schedule.
 
-## Real-Time Availability
+## Why Split Shifts?
 
-The new calendar shows availability as it actually exists. When someone books an appointment, the slot immediately becomes unavailable for everyone else. No more double-bookings or scheduling conflicts.
+Many salons, barbershops, and beauty studios have non-continuous operating hours:
 
-## Complex Scheduling Made Simple
+- Lunch breaks or rest periods
+- Morning and evening sessions
+- Different hours on different days
 
-Need to block off lunch hours? Schedule buffer time between appointments? Set different availability for different staff members? The new calendar handles all of this with intuitive controls that take minutes to learn.
+With split shifts, you can set exactly when you're open and when you're closed throughout the day.
 
-- Buffer time between appointments
-- Staff-specific schedules
-- Seasonal availability
-- Holiday closures
-- Break time blocks
+## Features
 
-## Calendar Sync
+- **Multiple time blocks per day** — Set as many opening windows as you need
 
-Connect your Google Calendar, Apple Calendar, or Outlook account. Your appointments automatically sync, and you can view your booking schedule alongside your personal calendar.
+- **Visual schedule display** — Clients see your complete availability at a glance
 
-## What Is Next
+- **Automatic conflict detection** — Prevents overlapping schedules
 
-This is just the beginning. In the coming weeks, we will be adding two-way sync so calendar changes automatically update your BookrHub availability, and group booking support for classes and workshops.
+- **Day-specific configuration** — Different hours for weekdays vs weekends
 
-All existing users have been automatically upgraded to the new calendar. If you have any questions or feedback, our support team is ready to help.`,
-    },
-    "whatsapp-reminders-2-0": {
-      date: "March 15, 2026",
-      category: "Improvement",
-      title: "WhatsApp Reminders 2.0: Custom Messages & Multi-Language Support",
-      excerpt:
-        "Send personalized WhatsApp reminders in Spanish, Portuguese, or English with custom messages for each service type.",
-      content: `Your clients will never miss an appointment again. Today we are launching WhatsApp Reminders 2.0 with powerful new features that help reduce no-shows and keep your clients engaged.
+## Use Cases
 
-## Custom Message Templates
+- **Salon with lunch break**: 9AM-1PM and 3PM-8PM
 
-Create personalized message templates for each service type. Remind clients to arrive early for hair coloring, bring specific items for spa treatments, or confirm their appointment time for busy periods.
+- **Barbershop with morning/evening sessions**: 8AM-12PM and 4PM-9PM
 
-## Multi-Language Support
-
-Reach clients in their preferred language. BookrHub now supports:
-
-- Spanish (LATAM and Spain variants)
-- Portuguese (Brazilian and European)
-- English
-
-Messages are sent in the language your client has configured in their profile.
-
-## Smart Timing
-
-Set optimal reminder times based on your business data. Some services need 24-hour reminders, others need a same-day reminder an hour before. The new system learns from your no-show patterns.
-
-## Two-Way Communication
-
-Clients can confirm, reschedule, or ask questions directly from the reminder message. No more phone tag or missed confirmations.
+- **Studio with mid-day closure**: 10AM-2PM and 5PM-10PM
 
 ## Getting Started
 
-Existing users will see the new features automatically. Head to Settings > Notifications to customize your message templates and timing.`,
-    },
-    "multi-location-support": {
-      date: "March 8, 2026",
-      category: "New Feature",
-      title: "Multi-Location Support for Growing Businesses",
-      excerpt:
-        "Manage all your salons or barbershops from a single dashboard with separate schedules, staff, and services for each location.",
-      content: `Expanding to multiple locations is a major milestone for any appointment business. Today we are making that growth easier with full multi-location support in BookrHub.
-
-## Single Dashboard, Multiple Locations
-
-View and manage all your locations from one login. See today's appointments across every salon, track revenue by location, and handle staffing from a unified dashboard.
-
-## Location-Specific Configuration
-
-Each location has its own:
-
-- Business hours and availability
-- Service list and pricing
-- Staff roster and schedules
-- Booking rules and policies
-
-## Cross-Location Reporting
-
-Get a complete picture of your business with reports that aggregate data across all locations, or drill down into individual salon performance.
-
-## Staff Portability
-
-Staff members can work at multiple locations. Schedule your senior stylist at two locations on different days, or let your massage therapist cover all your spa locations as needed.
-
-## Client History Across Locations
-
-A client who visits your downtown location can easily book at your new neighborhood salon. Their history, preferences, and notes follow them everywhere.
-
-## Pricing
-
-Multi-location support is available on our Business plan. Contact our sales team for franchise or chain pricing.`,
+Go to Settings > Company Hours and click "Add Shift" to create multiple time blocks for any day. Clients booking online will only see available time slots within your configured hours.`,
     },
     "online-payments-launch": {
-      date: "February 28, 2026",
+      date: "December 15, 2025",
       category: "New Feature",
-      title: "Online Payments Now Available in Latin America",
+      title: "Now Accepting MercadoPago for Online Payments in Latin America",
       excerpt:
-        "Accept payments online when clients book appointments with MercadoPago, PagSeguro, and major credit cards across LATAM.",
-      content: `We are thrilled to announce that online payments are now available for BookrHub users in Latin America. Accept payments at the time of booking and eliminate the hassle of chasing down payments after appointments.
+        "Accept secure online payments through MercadoPago when clients book appointments. Available across Argentina, Brazil, Mexico, Colombia, and Chile.",
+      content: `We are excited to announce that BookrHub now accepts MercadoPago for online payments across Latin America. Now your clients can pay securely at the time of booking, and you get paid instantly.
 
-## Payment Providers
+## Why MercadoPago?
 
-We support the most popular payment methods in the region:
+MercadoPago is the leading payment platform in Latin America, trusted by millions of businesses and consumers across the region. By integrating MercadoPago with BookrHub, you can:
 
-- **MercadoPago** (Argentina, Brazil, Mexico, Colombia, Chile)
-- **PagSeguro** (Brazil)
-- Major credit and debit cards (Visa, Mastercard, American Express)
-- Regional payment methods
+- Accept payments in local currency (ARS, BRL, MXN, COP, CLP)
+- Get instant settlements to your MercadoPago account
+- Offer clients a trusted, familiar payment method
+- Reduce no-shows with prepaid appointments
+
+## Supported Countries
+
+MercadoPago is now available for BookrHub users in:
+
+- **Argentina** - Argentine Peso (ARS)
+- **Brazil** - Brazilian Real (BRL)
+- **Mexico** - Mexican Peso (MXN)
+- **Colombia** - Colombian Peso (COP)
+- **Chile** - Chilean Peso (CLP)
 
 ## How It Works
 
-Clients select their service, choose a time slot, and complete payment in a single flow. They receive a confirmation email and WhatsApp message with their booking details and payment receipt.
+1. Connect your MercadoPago account in Settings > Payments
+2. Enable online payments for your services
+3. Clients pay at checkout when booking online
+4. You receive instant notifications and same-day payouts
 
 ## Deposit and Prepayment Options
 
 Require a deposit to secure high-demand appointments. Set percentage or fixed-amount deposits per service. Non-refundable deposits are popular for hair coloring and extensive treatments.
 
-## Instant Payouts
-
-Get your money fast with same-day payouts to your local bank account. No waiting for weekly or monthly settlement cycles.
-
-## Security and Compliance
-
-All payments are processed through PCI-compliant providers. Your clients' payment information is never stored on BookrHub servers.
-
 ## Getting Started
 
-Enable payments in Settings > Payments. Connect your preferred provider, configure your payout schedule, and start accepting online bookings today.`,
-    },
-    "new-dashboard-analytics": {
-      date: "February 15, 2026",
-      category: "Improvement",
-      title: "New Dashboard: Advanced Analytics & Revenue Tracking",
-      excerpt:
-        "Get deeper insights into your business performance with revenue tracking by service, staff, and time period. Export reports for tax season.",
-      content: `Understanding your business performance is crucial for growth. Today we are launching a completely redesigned dashboard with analytics that give you the insights you need to make better decisions.
-
-## Revenue Overview
-
-See your total revenue at a glance. Compare this month to last month, track year-over-year growth, and identify seasonal trends in your business.
-
-## Breakdown by Service
-
-Which services generate the most revenue? Which have the highest margins? The new analytics show performance by individual service, helping you decide what to promote or potentially adjust.
-
-## Staff Performance Metrics
-
-Track revenue generated by each staff member. See their booking rate, average service value, and repeat client percentage. Use this data for performance reviews and incentive programs.
-
-## Client Insights
-
-- New vs returning clients
-- Average client lifetime value
-- Booking frequency by service type
-- Peak booking days and times
-
-## Export for Accountants
-
-Download reports in CSV or PDF format. Pre-built reports for common accounting formats make tax season easier. Your accountant will thank you.
-
-## Custom Date Ranges
-
-Run reports for any date range. Compare Q4 last year to Q4 this year, or analyze your busy season in detail.
-
-## What Is Coming
-
-We are working on automated weekly reports delivered to your email, trend predictions using historical data, and goal tracking so you can set and monitor revenue targets.
-
-All users have access to the new dashboard today. Let us know what metrics you want to see next.`,
+Enable payments in Settings > Payments. Connect your MercadoPago account, configure your payout schedule, and start accepting online bookings today.`,
     },
   },
   es: {
-    "launch-new-booking-calendar": {
-      date: "23 de Marzo, 2026",
-      category: "New Feature",
-      title: "Lanzamiento: Nuevo Calendario de Citas con Disponibilidad en Tiempo Real",
+    "split-opening-hours": {
+      date: "24 de Marzo, 2026",
+      category: "Nueva Función",
+      title: "Configura Múltiples Horarios de Apertura por Día con Turnos Divididos",
       excerpt:
-        "Hemos reconstruido completamente nuestro calendario de reservas con disponibilidad en tiempo real, programación compleja y sincronización con calendarios.",
-      content: `Estamos emocionados de anunciar el lanzamiento de nuestro calendario de reservas completamente reconstruido. Después de meses de desarrollo y comentarios de cientos de salones, spas y barberías, hemos creado una experiencia de programación que maneja la complejidad de los negocios reales de citas.
+        "Configura tus horarios de atención con múltiples bloques de tiempo por día. Perfecto para salones y barberías con descansos para almorzar o horarios divididas.",
+      content: `Estamos emocionados de presentar los horarios de apertura dividida para BookrHub. Ahora puedes configurar múltiples bloques de tiempo por día para coincidir con tu horario real de atención.
 
-## Disponibilidad en Tiempo Real
+## Por Qué Turnos Divididos?
 
-El nuevo calendario muestra la disponibilidad tal como existe. Cuando alguien reserva una cita, el horario inmediatamente se vuelve no disponible para todos los demás. Ya no más doble reservas o conflictos de horarios.
+Muchos salones de belleza, barberías y estudios de estética tienen horarios de operación no continuos:
 
-## Programación Compleja Hecha Simple
+- Descansos para almuerzo o períodos de descanso
+- Sesiones de mañana y noche
+- Diferentes horarios en diferentes días
 
-¿Necesitas bloquear la hora del almuerzo? Programar tiempo debuffer entre citas? ¿Establecer diferentes disponibilidad para diferentes miembros del personal? El nuevo calendario maneja todo esto con controles intuitivos que toman minutos para aprender.
+Con los turnos divididos, puedes establecer exactamente cuándo estás abierto y cuándo estás cerrado durante el día.
 
-- Tiempo de buffer entre citas
-- Horarios específicos por personal
-- Disponibilidad estacional
-- Cierres por feriados
-- Bloques de descanso
+## Características
 
-## Sincronización con Calendarios
+- **Múltiples bloques de tiempo por día** — Configura todas las ventanas de apertura que necesites
 
-Conecta tu Google Calendar, Apple Calendar o cuenta de Outlook. Tus citas se sincronizan automáticamente, y puedes ver tu calendario de reservas junto con tu calendario personal.
+- **Visualización del horario** — Los clientes ven tu disponibilidad completa de un vistazo
 
-## Qué Sigue
+- **Detección automática de conflictos** — Evita horarios superpuestos
 
-Esto es solo el comienzo. En las próximas semanas, agregaremos sincronización bidireccional para que los cambios de calendario actualicen automáticamente tu disponibilidad de BookrHub, y soporte para reservas grupales para clases y talleres.
+- **Configuración por día** — Diferentes horarios para días laborables vs fines de semana
 
-Todos los usuarios existentes han sido actualizados automáticamente al nuevo calendario. Si tienes alguna pregunta o comentarios, nuestro equipo de soporte está listo para ayudar.`,
-    },
-    "whatsapp-reminders-2-0": {
-      date: "15 de Marzo, 2026",
-      category: "Improvement",
-      title: "Recordatorios de WhatsApp 2.0: Mensajes Personalizados y Soporte Multiidioma",
-      excerpt:
-        "Envía recordatorios personalizados de WhatsApp en español, portugués o inglés con mensajes personalizados para cada tipo de servicio.",
-      content: `Tus clientes nunca más perderán una cita. Hoy lanzamos WhatsApp Reminders 2.0 con poderosas nuevas funciones que ayudan a reducir las inasistencias y mantener a tus clientes comprometidos.
+## Casos de Uso
 
-## Plantillas de Mensajes Personalizados
+- **Salón con descanso almuerzos**: 9AM-1PM y 3PM-8PM
 
-Crea plantillas de mensajes personalizados para cada tipo de servicio. Recordatorio a los clientes llegar temprano para coloración de cabello, traer elementos específicos para tratamientos de spa, o confirmar su hora de cita para períodos sibukdos.
+- **Barbería con sesiones mañana/noche**: 8AM-12PM y 4PM-9PM
 
-## Soporte Multiidioma
-
-Llegue a los clientes en su idioma preferido. BookrHub ahora soporta:
-
-- Español (variantes LATAM y España)
-- Português (brasileño y europeo)
-- Inglés
-
-Los mensajes se envían en el idioma que tu cliente ha configurado en su perfil.
-
-## Tiempo Inteligente
-
-Establece tiempos de recordatorio óptimos basados en los datos de tu negocio. Algunos servicios necesitan recordatorios de 24 horas, otros necesitan un recordatorio el mismo día una hora antes. El nuevo sistema aprende de tus patrones de inasistencias.
-
-## Comunicación Bidireccional
-
-Los clientes pueden confirmar, reprogramar o hacer preguntas directamente desde el mensaje de recordatorio. Ya no más llamadas perdidas o confirmaciones perdidas.
+- **Estudio con cierre al medio día**: 10AM-2PM y 5PM-10PM
 
 ## Cómo Comenzar
 
-Los usuarios existentes verán las nuevas funciones automáticamente. Ve a Configuración > Notificaciones para personalizar tus plantillas de mensajes y tiempos.`,
-    },
-    "multi-location-support": {
-      date: "8 de Marzo, 2026",
-      category: "New Feature",
-      title: "Soporte Multi-Locación para Negocios en Crecimiento",
-      excerpt:
-        "Gestiona todos tus salones o barberías desde un solo panel con horarios, personal y servicios separados para cada ubicación.",
-      content: `Expandirse a múltiples ubicaciones es un hito importante para cualquier negocio de citas. Hoy hacemos ese crecimiento más fácil con soporte completo multi-locación en BookrHub.
-
-## Un Solo Panel, Múltiples Ubicaciones
-
-Ver y gestionar todas tus ubicaciones desde un solo inicio de sesión. Ve las citas de hoy en cada salon, rastrea ingresos por ubicación y gestiona personal desde un panel unificado.
-
-## Configuración Específica por Ubicación
-
-Cada ubicación tiene su propio:
-
-- Horarios de negocio y disponibilidad
-- Lista de servicios y precios
-- Lista de personal y horarios
-- Reglas y políticas de reservas
-
-## Reportes Multi-Locación
-
-Obtén una imagen completa de tu negocio con reportes que agregan datos en todas las ubicaciones, o profundiza en el rendimiento individual de cada salón.
-
-## Portabilidad del Personal
-
-Los miembros del personal pueden trabajar en múltiples ubicaciones. Programa a tu estilista principal en dos ubicaciones en diferentes días, o deja que tu terapeuta de masajes cubra todas tus ubicaciones de spa según sea necesario.
-
-## Historial del Cliente en Todas las Ubicaciones
-
-Un cliente que visita tu ubicación del centro puede reservar fácilmente en tu nuevo salón de barrio. Su historial, preferencias y notas los acompañan a todas partes.
-
-## Precios
-
-El soporte multi-locación está disponible en nuestro plan Business. Contacta a nuestro equipo de ventas para precios de franquicias o cadenas.`,
+Ve a Configuración > Horarios de la Empresa y haz clic en "Agregar Turno" para crear múltiples bloques de tiempo para cualquier día. Los clientes que reserven online solo verán los horarios disponibles dentro de las horas que hayas configurado.`,
     },
     "online-payments-launch": {
-      date: "28 de Febrero, 2026",
-      category: "New Feature",
-      title: "Pagos Online Ahora Disponibles en Latinoamérica",
+      date: "15 de Diciembre, 2025",
+      category: "Nueva Función",
+      title: "Ahora Aceptamos MercadoPago para Pagos Online en Latinoamérica",
       excerpt:
-        "Acepta pagos online cuando los clientes reservan citas con MercadoPago, PagSeguro y tarjetas de crédito principales en LATAM.",
-      content: `Estamos emocionados de anunciar que los pagos online ahora están disponibles para usuarios de BookrHub en Latinoamérica. Acepta pagos al momento de la reserva y elimina la molestia de cobrar después de las citas.
+        "Acepta pagos seguros online a través de MercadoPago cuando los clientes reservan citas. Disponible en Argentina, Brasil, México, Colombia y Chile.",
+      content: `Estamos emocionados de anunciar que BookrHub ahora acepta MercadoPago para pagos online en Latinoamérica. Ahora tus clientes pueden pagar de forma segura al momento de hacer la reserva, y tú recibes el pago al instante.
 
-## Proveedores de Pago
+## Por Qué MercadoPago?
 
-Apoyamos los métodos de pago más populares en la región:
+MercadoPago es la plataforma de pago líder en Latinoamérica, confiable por millones de negocios y consumidores en la región. Al integrar MercadoPago con BookrHub, puedes:
 
-- **MercadoPago** (Argentina, Brazil, México, Colombia, Chile)
-- **PagSeguro** (Brasil)
-- Tarjetas de crédito y débito principales (Visa, Mastercard, American Express)
-- Métodos de pago regionales
+- Aceptar pagos en moneda local (ARS, BRL, MXN, COP, CLP)
+- Obtener liquidaciones instantáneas a tu cuenta de MercadoPago
+- Ofrecer a los clientes un método de pago conocido y confiable
+- Reducir inasistencias con citas prepagadas
+
+## Países Soportados
+
+MercadoPago ahora está disponible para usuarios de BookrHub en:
+
+- **Argentina** - Peso Argentino (ARS)
+- **Brasil** - Real Brasileño (BRL)
+- **México** - Peso Mexicano (MXN)
+- **Colombia** - Peso Colombiano (COP)
+- **Chile** - Peso Chileno (CLP)
 
 ## Cómo Funciona
 
-Los clientes seleccionan su servicio, eligen un horario y completan el pago en un solo flujo. Reciben un correo electrónico de confirmación y mensaje de WhatsApp con los detalles de su reserva y recibo de pago.
+1. Conecta tu cuenta de MercadoPago en Configuración > Pagos
+2. Habilita pagos online para tus servicios
+3. Los clientes pagan al momento de reservar online
+4. Recibes notificaciones instantáneas y pagos mismos días
 
 ## Opciones de Depósito y Prepago
 
 Requiere un depósito para asegurar citas de alta demanda. Establece depósitos por porcentaje o monto fijo por servicio. Los depósitos no reembolsables son populares para coloración de cabello y tratamientos extensos.
 
-## Pagos Instantáneos
-
-Obtén tu dinero rápido con pagos mismos días a tu cuenta bancaria local. No esperes ciclos de liquidación semanales o mensuales.
-
-## Seguridad y Cumplimiento
-
-Todos los pagos se procesan a través de proveedores compatibles con PCI. La información de pago de tus clientes nunca se almacena en los servidores de BookrHub.
-
 ## Cómo Comenzar
 
-Habilita pagos en Configuración > Pagos. Conecta tu proveedor preferido, configura tu programa de pagos y comienza a aceptar reservas online hoy.`,
-    },
-    "new-dashboard-analytics": {
-      date: "15 de Febrero, 2026",
-      category: "Improvement",
-      title: "Nuevo Panel: Análisis Avanzados y Seguimiento de Ingresos",
-      excerpt:
-        "Obtén conocimientos más profundos sobre el rendimiento de tu negocio con seguimiento de ingresos por servicio, personal y período. Exporta reportes para la temporada de impuestos.",
-      content: `Entender el rendimiento de tu negocio es crucial para el crecimiento. Hoy lanzamos un panel completamente rediseñado con análisis que te dan las perspectivas que necesitas para tomar mejores decisiones.
-
-## Resumen de Ingresos
-
-Ve tus ingresos totales de un vistazo. Compara este mes con el mes pasado, rastrea el crecimiento año tras año e identifica tendencias estacionales en tu negocio.
-
-## Desglose por Servicio
-
-¿Qué servicios generan más ingresos? ¿Cuáles tienen los márgenes más altos? Los nuevos análisis muestran rendimiento por servicio individual, ayudándote a decidir qué promover o potencialmente ajustar.
-
-## Métricas de Rendimiento del Personal
-
-Rastrea ingresos generados por cada miembro del personal. Ve su tasa de reservas, valor promedio del servicio y porcentaje de clientes repetidos. Usa estos datos para evaluaciones de desempeño y programas de incentivos.
-
-## Perspectivas del Cliente
-
-- Clientes nuevos vs recurrentes
-- Valor promedio de vida del cliente
-- Frecuencia de reservas por tipo de servicio
-- Días y horarios pico de reservas
-
-## Exportar para Contadores
-
-Descarga reportes en formato CSV o PDF. Reportes pre-construidos para formatos contables comunes hacen la temporada de impuestos más fácil. Tu contador te agradecerá.
-
-## Rangos de Fechas Personalizados
-
-Ejecuta reportes para cualquier rango de fechas. Compara Q4 del año pasado con Q4 de este año, o analiza tu temporada alta en detalle.
-
-## Qué Viene
-
-Estamos trabajando en reportes semanales automáticos entregados a tu email, predicciones de tendencias usando datos históricos y seguimiento de metas para que puedas establecer y monitorear objetivos de ingresos.
-
-Todos los usuarios tienen acceso al nuevo panel hoy. Cuéntanos qué métricas te gustaría ver a continuación.`,
+Habilita pagos en Configuración > Pagos. Conecta tu cuenta de MercadoPago, configura tu programa de pagos y comienza a aceptar reservas online hoy.`,
     },
   },
 };

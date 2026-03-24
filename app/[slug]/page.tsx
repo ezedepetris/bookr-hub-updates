@@ -8,11 +8,8 @@ const BASE_URL = "https://www.bookrhub.com";
 
 export async function generateStaticParams() {
   return [
-    { slug: "launch-new-booking-calendar" },
-    { slug: "whatsapp-reminders-2-0" },
-    { slug: "multi-location-support" },
+    { slug: "split-opening-hours" },
     { slug: "online-payments-launch" },
-    { slug: "new-dashboard-analytics" },
   ];
 }
 
@@ -131,9 +128,18 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
                 .filter((line) => line.startsWith("- "));
               return (
                 <ul key={index} className="list-disc pl-6 text-[#57534e]">
-                  {items.map((item, i) => (
-                    <li key={i}>{item.replace("- ", "")}</li>
-                  ))}
+                  {items.map((item, i) => {
+                    const text = item.replace("- ", "");
+                    const formatted = text.replace(
+                      /\*\*(.*?)\*\*/g,
+                      "<strong>$1</strong>"
+                    );
+                    return (
+                      <li key={i}>
+                        <span dangerouslySetInnerHTML={{ __html: formatted }} />
+                      </li>
+                    );
+                  })}
                 </ul>
               );
             }

@@ -123,7 +123,79 @@ Require a deposit to secure high-demand appointments. Set percentage or fixed-am
 
 Enable payments in Settings > Payments. Connect your MercadoPago account, configure your payout schedule, and start accepting online bookings today.`,
     },
+
+    // April 2026 - Customer Management
+    "customer-management": {
+      date: "April 1, 2026",
+      category: "New Feature",
+      title: "New Customer Management System",
+      excerpt:
+        "Store customer information, view booking history, and automatically link bookings to existing customers for better communication.",
+      content: `We're excited to introduce our new Customer Management system. Now you can store and manage all your customer information in one place.
+
+## What's New
+
+- **Customer Database**: Store name, email, phone, and address for each customer
+- **Automatic Linking**: Bookings are automatically linked to existing customers by email
+- **Booking History**: View complete booking history for each customer
+- **Customer Search**: Quick search in booking forms to find existing customers
+
+## Key Features
+
+### Store Customer Information
+Keep all your customer details organized:
+- First and last name
+- Email address
+- Phone number
+- Address
+- Notes
+
+### Automatic Customer Recognition
+When a customer books online or you create a booking in the admin:
+- If the email already exists → automatically links to that customer
+- If it's a new email → creates a new customer profile
+- Customer info is updated with the latest details provided
+
+### View Customer History
+In the customer edit page, you can see:
+- All past bookings for that customer
+- Booking status, date, service, and total
+- Perfect for tracking customer loyalty and repeat visits
+
+### Quick Customer Search
+In the booking form:
+- Search dropdown to find existing customers by name or email
+- Click to auto-fill customer details
+- "New Customer" button to create customers on the fly
+
+## How It Works
+
+### Admin Side
+1. Go to Customers in the sidebar to view all customers
+2. Add, edit, or delete customers
+3. Search customers by name, email, or phone
+4. When creating a booking, select an existing customer or create new
+
+### Customer Booking Page
+When customers book online:
+1. They enter their name, email, and phone
+2. If the email matches an existing customer, the booking automatically links to them
+3. You can see their full booking history in the customer profile
+4. Perfect for sending confirmation emails and tracking repeat customers
+
+## Getting Started
+
+The customer management feature is automatically enabled for all companies. Simply:
+
+1. Visit the Customers section in your admin panel
+2. Add existing customers or let them be created automatically
+3. View customer profiles to see their booking history
+4. Use the search when creating new bookings
+
+Start building your customer database today!`,
+    },
   },
+
   es: {
     "split-opening-hours": {
       date: "24 de Marzo, 2026",
@@ -206,6 +278,77 @@ Requiere un depósito para asegurar citas de alta demanda. Establece depósitos 
 ## Cómo Comenzar
 
 Habilita pagos en Configuración > Pagos. Conecta tu cuenta de MercadoPago, configura tu programa de pagos y comienza a aceptar reservas online hoy.`,
+    },
+
+    // April 2026 - Customer Management Spanish
+    "customer-management": {
+      date: "1 de Abril, 2026",
+      category: "Nueva Función",
+      title: "Nuevo Sistema de Gestión de Clientes",
+      excerpt:
+        "Almacena información de clientes, consulta el historial de reservas y vincula automáticamente las reservas a clientes existentes.",
+      content: `Estamos emocionados de presentar nuestro nuevo sistema de Gestión de Clientes. Ahora puedes almacenar y gestionar toda la información de tus clientes en un solo lugar.
+
+## Qué Hay de Nuevo
+
+- **Base de Datos de Clientes**: Almacena nombre, email, teléfono y dirección de cada cliente
+- **Vinculación Automática**: Las reservas se vinculan automáticamente a clientes existentes por email
+- **Historial de Reservas**: Consulta el historial completo de reservas de cada cliente
+- **Búsqueda de Clientes**: Búsqueda rápida en formularios de reserva para encontrar clientes existentes
+
+## Características Principales
+
+### Almacena Información de Clientes
+Mantén todos los detalles de tus clientes organizados:
+- Nombre y apellido
+- Dirección de email
+- Número de teléfono
+- Dirección
+- Notas
+
+### Reconocimiento Automático de Clientes
+Cuando un cliente reserva online o creas una reserva en el admin:
+- Si el email ya existe → se vincula automáticamente a ese cliente
+- Si es un email nuevo → se crea un nuevo perfil de cliente
+- La información del cliente se actualiza con los últimos datos proporcionados
+
+### Ver Historial del Cliente
+En la página de edición del cliente, puedes ver:
+- Todas las reservas pasadas de ese cliente
+- Estado de reserva, fecha, servicio y total
+- Perfecto para rastrear lealtad de clientes y visitas repetidas
+
+### Búsqueda Rápida de Clientes
+En el formulario de reserva:
+- Menú desplegable para buscar clientes existentes por nombre o email
+- Haz clic para autocompletar datos del cliente
+- Botón "Nuevo Cliente" para crear clientes sobre la marcha
+
+## Cómo Funciona
+
+### Lado Administrador
+1. Ve a Clientes en la barra lateral para ver todos los clientes
+2. Agrega, edita o elimina clientes
+3. Busca clientes por nombre, email o teléfono
+4. Al crear una reserva, selecciona un cliente existente o crea uno nuevo
+
+### Página de Reserva del Cliente
+Cuando los clientes reservan online:
+1. Ingresan su nombre, email y teléfono
+2. Si el email coincide con un cliente existente, la reserva se vincula automáticamente
+3. Puedes ver su historial completo de reservas en el perfil del cliente
+4. Perfecto para enviar emails de confirmación y rastrear clientes recurrentes
+
+## Cómo Comenzar
+
+La función de gestión de clientes está habilitada automáticamente para todas las empresas. Simplemente:
+
+1. Visita la sección Clientes en tu panel de administración
+2. Agrega clientes existentes o déjalos crear automáticamente
+3. Consulta los perfiles de clientes para ver su historial de reservas
+4. Usa la búsqueda al crear nuevas reservas
+
+¡Comienza a construir tu base de datos de clientes hoy!`,
     },
   },
 };

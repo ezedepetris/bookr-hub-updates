@@ -47,6 +47,18 @@ export const updates = {
       title: "Set Multiple Opening Hours Per Day with Split Shifts",
       excerpt:
         "Configure your business hours with multiple time blocks per day. Perfect for salons and barbershops with lunch breaks or split operating schedules.",
+      images: [
+        {
+          src: "/independent-opening-hours.png",
+          alt: "Independent Plan - Single shift opening hours",
+          caption: "If you have an Independent plan, this is how your business hours will be displayed.",
+        },
+        {
+          src: "/business-opening-hours.png",
+          alt: "Business Plan - Multiple shifts opening hours",
+          caption: "If you have a Business plan with a custom landing page, this is how they could look like.",
+        },
+      ],
       content: `We're excited to introduce split opening hours for BookrHub. Now you can configure multiple time blocks per day to match your real operating schedule.
 
 ## Why Split Shifts?
@@ -203,6 +215,18 @@ Start building your customer database today!`,
       title: "Configura Múltiples Horarios de Apertura por Día con Turnos Divididos",
       excerpt:
         "Configura tus horarios de atención con múltiples bloques de tiempo por día. Perfecto para salones y barberías con descansos para almorzar o horarios divididas.",
+      images: [
+        {
+          src: "/independent-opening-hours.png",
+          alt: "Plan Independiente - Horario de apertura con un solo turno",
+          caption: "Si tienes un plan Independiente, así se mostrarán tus horarios de atención.",
+        },
+        {
+          src: "/business-opening-hours.png",
+          alt: "Plan Negocio - Horario de apertura con múltiples turnos",
+          caption: "Si tienes un plan Negocio con una landing page personalizada, así podrían verse.",
+        },
+      ],
       content: `Estamos emocionados de presentar los horarios de apertura dividida para BookrHub. Ahora puedes configurar múltiples bloques de tiempo por día para coincidir con tu horario real de atención.
 
 ## Por Qué Turnos Divididos?
@@ -235,7 +259,7 @@ Con los turnos divididos, puedes establecer exactamente cuándo estás abierto y
 
 ## Cómo Comenzar
 
-Ve a Configuración > Horarios de la Empresa y haz clic en "Agregar Turno" para crear múltiples bloques de tiempo para cualquier día. Los clientes que reserven online solo verán los horarios disponibles dentro de las horas que hayas configurado.`,
+Ve a Configuración > Horarios de la Empresa y haz clic en "Agregar Turno" para crear múltiples bloques de tiempo para cualquier día. Los clientes que reserven online solo veráán los horarios disponibles dentro de las horas que hayas configurado.`,
     },
     "online-payments-launch": {
       date: "15 de Diciembre, 2025",

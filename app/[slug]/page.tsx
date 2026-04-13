@@ -156,6 +156,26 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
             }
             return <p key={index} className="text-[#57534e]">{paragraph}</p>;
           })}
+          {"images" in update && update.images && update.images.length > 0 && (
+            <div className="my-8 space-y-6">
+              {update.images.map((image, imgIndex) => (
+                <figure key={imgIndex} className="overflow-hidden rounded-xl border border-[#e7e5e4]">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={450}
+                    className="w-full h-auto"
+                  />
+                  {image.caption && (
+                    <figcaption className="mt-2 text-center text-sm text-[#a8a29e]">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
+          )}
         </div>
       </article>
 

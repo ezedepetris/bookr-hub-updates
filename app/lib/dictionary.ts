@@ -309,7 +309,7 @@ Start building your customer database today!`,
     "new-booking-flow": {
       date: "3 de Abril, 2026",
       category: "Nueva Función",
-      title: "Nueva Experiencia de Reserva para Planes Negocio",
+      title: "Nueva Experiencia de Reserva para Planes Business",
       excerpt:
         "Un flujo de reserva completamente renovado con selección de profesional, disponibilidad instantánea, personalización de marca y mejor rendimiento para SEO.",
       images: [
@@ -349,7 +349,7 @@ Start building your customer database today!`,
           caption: "Flujo fácil de reprogramación y cancelación para clientes",
         },
       ],
-      content: `Estamos emocionados de anunciar una renovación completa de la experiencia de reserva para usuarios del plan Negocio. Este nuevo flujo de reserva está diseñado para proporcionar una experiencia moderna y fluida que coincide con tu identidad de marca y te ayuda a convertir más clientes.
+      content: `Estamos emocionados de anunciar una renovación completa de la experiencia de reserva para usuarios del plan Business. Este nuevo flujo de reserva está diseñado para proporcionar una experiencia moderna y fluida que coincide con tu identidad de marca y te ayuda a convertir más clientes.
 
 ## Qué Hay de Nuevo
 
@@ -395,13 +395,13 @@ El nuevo flujo de reserva está optimizado para motores de búsqueda:
 - **Diseño Mobile-First** — Totalmente responsivo para usuarios móviles, un factor clave de ranking
 - **URLs Limpias** — Estructura de URLs amigable para SEO
 
-## Solo para Planes Negocio
+## Solo para Planes Business
 
-Esta nueva experiencia de reserva está disponible exclusivamente para usuarios del plan Negocio. Funciona perfectamente con tu landing page personalizada para proporcionar una experiencia completa y con marca para tus clientes.
+Esta nueva experiencia de reserva está disponible exclusivamente para usuarios del plan Business. Funciona perfectamente con tu landing page personalizada para proporcionar una experiencia completa y con marca para tus clientes.
 
 ## Cómo Comenzar
 
-Si estás en el plan Negocio, el nuevo flujo de reserva está habilitado automáticamente. Personaliza tus colores y logo en Configuración > Marca para coincidir con la identidad de tu empresa.`,
+Si estás en el plan Business, el nuevo flujo de reserva está habilitado automáticamente. Personaliza tus colores y logo en Configuración > Marca para coincidir con la identidad de tu empresa.`,
     },
     "split-opening-hours": {
       date: "24 de Marzo, 2026",
@@ -417,8 +417,8 @@ Si estás en el plan Negocio, el nuevo flujo de reserva está habilitado automá
         },
         {
           src: "/business-opening-hours.png",
-          alt: "Plan Negocio - Horario de apertura con múltiples turnos",
-          caption: "Si tienes un plan Negocio con una landing page personalizada, así podrían verse.",
+          alt: "Plan Business - Horario de apertura con múltiples turnos",
+          caption: "Si tienes un plan Business con una landing page personalizada, así podrían verse.",
         },
       ],
       content: `Estamos emocionados de presentar los horarios de apertura dividida para BookrHub. Ahora puedes configurar múltiples bloques de tiempo por día para coincidir con tu horario real de atención.

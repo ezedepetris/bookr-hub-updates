@@ -116,6 +116,13 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
       <article className="mx-auto max-w-3xl px-6 py-12">
         <div className="prose prose-zinc max-w-none">
           {paragraphs.map((paragraph, index) => {
+            if (paragraph.startsWith("### ")) {
+              return (
+                <h3 key={index} className="mt-6 first:mt-0 text-lg font-semibold text-[#1c1917]">
+                  {paragraph.replace("### ", "")}
+                </h3>
+              );
+            }
             if (paragraph.startsWith("## ")) {
               return (
                 <h2 key={index} className="mt-8 first:mt-0 text-[#1c1917]">

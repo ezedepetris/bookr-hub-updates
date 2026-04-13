@@ -2,16 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getDictionary, getUpdate } from "../lib/dictionary";
+import { getDictionary, getUpdate, getUpdates } from "../lib/dictionary";
 
 const BASE_URL = "https://www.bookrhub.com";
 
 export async function generateStaticParams() {
-  return [
-    { slug: "new-booking-flow" },
-    { slug: "split-opening-hours" },
-    { slug: "online-payments-launch" },
-  ];
+  const updatesEn = getUpdates("en");
+  return Object.keys(updatesEn).map((slug) => ({ slug }));
 }
 
 interface PageProps {

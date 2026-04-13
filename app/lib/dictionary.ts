@@ -41,6 +41,103 @@ export function getDictionary(locale: string) {
 
 export const updates = {
   en: {
+    "new-booking-flow": {
+      date: "April 3, 2026",
+      category: "New Feature",
+      title: "Brand New Booking Experience for Business Plans",
+      excerpt:
+        "A completely redesigned booking flow with worker selection, instant availability, customizable branding, and improved performance for better SEO rankings.",
+      images: [
+        {
+          src: "/booking-step1-services.png",
+          alt: "Step 1 - Service selection",
+          caption: "Step 1: Clients browse and select from all available services",
+        },
+        {
+          src: "/booking-step2-worker.png",
+          alt: "Step 2 - Worker selection",
+          caption: "Step 2: Choose a specific worker or select 'Any available' for the first available appointment",
+        },
+        {
+          src: "/booking-step3-time.png",
+          alt: "Step 3 - Time selection",
+          caption: "Step 3: View all available time slots and pick the one that works best",
+        },
+        {
+          src: "/booking-step4-details.png",
+          alt: "Step 4 - Customer details",
+          caption: "Step 4: Enter customer details and accept terms and policies",
+        },
+        {
+          src: "/booking-confirmation.png",
+          alt: "Booking confirmation screen",
+          caption: "New booking confirmation screen with clear summary",
+        },
+        {
+          src: "/booking-payment.png",
+          alt: "Payment screen",
+          caption: "New payment screen with secure checkout",
+        },
+        {
+          src: "/booking-reschedule.png",
+          alt: "Reschedule flow",
+          caption: "Easy reschedule and cancellation flow for customers",
+        },
+      ],
+      content: `We're excited to announce a complete overhaul of the booking experience for Business plan users. This new booking flow is designed to provide a seamless, modern experience that matches your brand identity and helps you convert more customers.
+
+## What's New
+
+The new booking flow includes:
+
+- **Worker Selection** — Clients can choose their preferred professional or select "Any available" to get the earliest appointment across all staff
+- **Instant Availability** — Real-time display of all available time slots, showing exactly when the next appointment is available
+- **Customizable Branding** — Match your landing page colors and logo for a cohesive brand experience
+- **Responsive Design** — Optimized for both desktop and mobile devices
+- **Improved Performance** — Faster page loads and better SEO optimization for higher search rankings
+
+## Booking Flow Steps
+
+### Step 1: Select a Service
+Clients browse through all your services with clear descriptions and pricing. Each service shows duration and category.
+
+### Step 2: Choose Your Professional
+Choose a specific worker or select "Any available" — the system will show all time slots where any staff member is free, automatically matching clients with the first available appointment.
+
+### Step 3: Pick a Time
+See all available time slots at a glance. The interface clearly shows which slots have earliest availability.
+
+### Step 4: Enter Details
+Fill in customer information and accept terms and policies. The form is streamlined for quick completion.
+
+## New Screens
+
+### Booking Confirmation
+A clean, professional confirmation screen that summarizes the appointment details, professional assigned, and next steps.
+
+### Payment Screen
+New payment interface with support for all configured payment methods. Secure and easy to use.
+
+### Reschedule Flow
+Customers can easily reschedule or cancel their booking through a simple, intuitive interface.
+
+## SEO Improvements
+
+The new booking flow is optimized for search engines:
+
+- **Faster Load Times** — Improved performance means better Core Web Vitals scores
+- **Structured Data** — Proper schema markup helps Google understand your content
+- **Mobile-First Design** — Fully responsive for mobile users, a key ranking factor
+- **Clean URLs** — SEO-friendly URL structure
+
+## Only for Business Plans
+
+This new booking experience is available exclusively for Business plan users. It works seamlessly with your custom landing page to provide a complete, branded experience for your clients.
+
+## Getting Started
+
+If you're on the Business plan, the new booking flow is automatically enabled. Customize your colors and logo in Settings > Branding to match your company's identity.`,
+    },
     "split-opening-hours": {
       date: "March 24, 2026",
       category: "New Feature",
@@ -209,6 +306,103 @@ Start building your customer database today!`,
   },
 
   es: {
+    "new-booking-flow": {
+      date: "3 de Abril, 2026",
+      category: "Nueva Función",
+      title: "Nueva Experiencia de Reserva para Planes Negocio",
+      excerpt:
+        "Un flujo de reserva completamente renovado con selección de profesional, disponibilidad instantánea, personalización de marca y mejor rendimiento para SEO.",
+      images: [
+        {
+          src: "/booking-step1-services.png",
+          alt: "Paso 1 - Selección de servicio",
+          caption: "Paso 1: Los clientes navegan y seleccionan todos los servicios disponibles",
+        },
+        {
+          src: "/booking-step2-worker.png",
+          alt: "Paso 2 - Selección de profesional",
+          caption: "Paso 2: Elige un profesional específico o selecciona 'Cualquiera disponible' para la primera cita disponible",
+        },
+        {
+          src: "/booking-step3-time.png",
+          alt: "Paso 3 - Selección de horario",
+          caption: "Paso 3: Ver todos los horarios disponibles y elegir el que mejor funcione",
+        },
+        {
+          src: "/booking-step4-details.png",
+          alt: "Paso 4 - Datos del cliente",
+          caption: "Paso 4: Ingresa los datos del cliente y acepta términos y políticas",
+        },
+        {
+          src: "/booking-confirmation.png",
+          alt: "Pantalla de confirmación de reserva",
+          caption: "Nueva pantalla de confirmación con resumen claro",
+        },
+        {
+          src: "/booking-payment.png",
+          alt: "Pantalla de pago",
+          caption: "Nueva pantalla de pago con checkout seguro",
+        },
+        {
+          src: "/booking-reschedule.png",
+          alt: "Flujo de reprogramación",
+          caption: "Flujo fácil de reprogramación y cancelación para clientes",
+        },
+      ],
+      content: `Estamos emocionados de anunciar una renovación completa de la experiencia de reserva para usuarios del plan Negocio. Este nuevo flujo de reserva está diseñado para proporcionar una experiencia moderna y fluida que coincide con tu identidad de marca y te ayuda a convertir más clientes.
+
+## Qué Hay de Nuevo
+
+El nuevo flujo de reserva incluye:
+
+- **Selección de Profesional** — Los clientes pueden elegir su profesional preferido o seleccionar "Cualquiera disponible" para obtener la cita más temprana con cualquier staff
+- **Disponibilidad Instantánea** — Visualización en tiempo real de todos los horarios disponibles, mostrando exactamente cuándo está disponible la próxima cita
+- **Personalización de Marca** — Coincide con los colores y logo de tu landing page para una experiencia de marca coherente
+- **Diseño Responsivo** — Optimizado para dispositivos de escritorio y móviles
+- **Mejor Rendimiento** — Cargas de página más rápidas y mejor optimización SEO para mejores posiciones en búsquedas
+
+## Pasos del Flujo de Reserva
+
+### Paso 1: Selecciona un Servicio
+Los clientes navegan por todos tus servicios con descripciones claras y precios. Cada servicio muestra duración y categoría.
+
+### Paso 2: Elige tu Profesional
+Elige un profesional específico o selecciona "Cualquiera disponible" — el sistema mostrará todos los horarios donde cualquier miembro del staff esté libre, emparejando automáticamente a los clientes con la primera cita disponible.
+
+### Paso 3: Elige un Horario
+Ver todos los horarios disponibles de un vistazo. La interfaz muestra claramente qué horarios tienen disponibilidad más temprana.
+
+### Paso 4: Ingresa tus Datos
+Completa la información del cliente y acepta términos y políticas. El formulario está optimizado para completarlo rápidamente.
+
+## Nuevas Pantallas
+
+### Confirmación de Reserva
+Una pantalla de confirmación limpia y profesional que resume los detalles de la cita, el profesional asignado y los próximos pasos.
+
+### Pantalla de Pago
+Nueva interfaz de pago con soporte para todos los métodos de pago configurados. Seguro y fácil de usar.
+
+### Flujo de Reprogramación
+Los clientes pueden reprogramar o cancelar fácilmente su reserva a través de una interfaz simple e intuitiva.
+
+## Mejoras SEO
+
+El nuevo flujo de reserva está optimizado para motores de búsqueda:
+
+- **Tiempos de Carga Más Rápidos** — Mejor rendimiento significa mejores puntajes de Core Web Vitals
+- **Datos Estructurados** — Markup de schema apropiado ayuda a Google a entender tu contenido
+- **Diseño Mobile-First** — Totalmente responsivo para usuarios móviles, un factor clave de ranking
+- **URLs Limpias** — Estructura de URLs amigable para SEO
+
+## Solo para Planes Negocio
+
+Esta nueva experiencia de reserva está disponible exclusivamente para usuarios del plan Negocio. Funciona perfectamente con tu landing page personalizada para proporcionar una experiencia completa y con marca para tus clientes.
+
+## Cómo Comenzar
+
+Si estás en el plan Negocio, el nuevo flujo de reserva está habilitado automáticamente. Personaliza tus colores y logo en Configuración > Marca para coincidir con la identidad de tu empresa.`,
+    },
     "split-opening-hours": {
       date: "24 de Marzo, 2026",
       category: "Nueva Función",

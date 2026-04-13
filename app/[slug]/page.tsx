@@ -8,6 +8,7 @@ const BASE_URL = "https://www.bookrhub.com";
 
 export async function generateStaticParams() {
   return [
+    { slug: "new-booking-flow" },
     { slug: "split-opening-hours" },
     { slug: "online-payments-launch" },
   ];

@@ -41,6 +41,112 @@ export function getDictionary(locale: string) {
 
 export const updates = {
   en: {
+    "new-languages-customer-booking": {
+      date: "April 16, 2026",
+      category: "New Feature",
+      title: "Book in Your Language: 6 New Languages for Customer Bookings",
+      excerpt:
+        "Now your customers can book appointments in their preferred language. Portuguese, French, Dutch, Russian, and Italian support added to the booking flow.",
+      images: [
+        {
+          src: "/booking-v1-languages.png",
+          alt: "V1 Booking flow with language selector",
+          caption: "Classic booking flow - customers select their preferred language",
+        },
+        {
+          src: "/booking-v2-languages.png",
+          alt: "V2 Booking flow with language selector",
+          caption: "New booking flow - seamless multi-language experience",
+        },
+      ],
+      content: `We're thrilled to announce that your customers can now book appointments in their native language! We've listened to your feedback and added support for 7 new languages in the customer booking experience.
+
+## New Languages Supported
+
+- 🇧🇷 **Portuguese (Brasil)** — Reach millions of Brazilian customers
+- 🇵🇹 **Portuguese (Portugal)** — Serve Portuguese customers
+- 🇫🇷 **French** — Serve your French-speaking clients with ease
+- 🇳🇱 **Dutch** — Perfect for businesses in the Netherlands and Belgium
+- 🇷🇺 **Russian** — Expand your reach to Russian-speaking markets
+- 🇮🇹 **Italian** — Delight your Italian customers
+
+Combined with our existing **English** and **Spanish** support, you can now serve customers across the globe in their preferred language.
+
+## How It Works
+
+Your customers will see a language selector on the booking page. They can choose their preferred language, and the entire booking experience — from service selection to confirmation — will be displayed in their chosen language.
+
+### For Your Customers
+
+- **Native Experience** — Customers see the booking interface in their language
+- **No Confusion** — Clear, natural translations without language barriers
+- **Built Trust** — Customers feel more comfortable booking when they understand every detail
+
+### For Your Business
+
+- **Company Language Stays the Same** — Your admin panel, settings, and business communications remain in your configured company language
+- **Automatic Detection** — New visitors see the booking page in their browser's language (if supported)
+- **Easy Switching** — Customers can manually select their preferred language at any time
+
+## Smart Email Delivery
+
+We understand that clear communication is key to running a successful business. Here's how our email system works:
+
+### Customer Emails (In Their Language)
+
+When a customer books an appointment, all communications they receive will be in their **selected booking language**:
+
+- 📧 **Booking Confirmation** — Sent in the customer's language
+- 📧 **Reminder Emails** — Sent in the customer's language  
+- 📧 **Reschedule Notifications** — Sent in the customer's language
+- 📧 **Cancellation Confirmations** — Sent in the customer's language
+
+### Your Business Emails (In Your Language)
+
+All emails and notifications sent to **you and your team** will always be in your configured **company language**:
+
+- 📧 **New Booking Alerts** — In your company language
+- 📧 **Staff Notifications** — In your company language
+- 📧 **Admin Communications** — In your company language
+
+This ensures you never miss important information while your customers get the best experience in their native language.
+
+## Based on Your Feedback
+
+This feature was built based on direct feedback from businesses like yours. Many of you told us:
+
+> *"My clients come from all over Europe and struggle with the booking process in English."*
+
+> *"I lose bookings because people don't feel comfortable providing their details in a language they don't understand."*
+
+> *"I'd love to expand to Brazilian clients but they need to book in Portuguese."*
+
+We heard you! Our team worked to create a solution that removes language barriers without complicating your workflow. Your business continues to operate as usual, while your customers enjoy a seamless experience in their preferred language.
+
+## Getting Started
+
+### For Business Plan Users
+
+The new language feature is already enabled on your booking page. Customers visiting your booking flow will see the language selector automatically.
+
+### For All Plans
+
+If you're on a different plan, this feature will be available when you upgrade to Business.
+
+## We Want to Hear From You
+
+This is just the beginning. We're committed to continuously improving BookrHub based on your needs and your customers' needs.
+
+**Leave us a message** — Tell us:
+- Which languages would you like to see next?
+- How has multi-language support helped your business?
+- Any feedback on the current translations?
+
+Our team reads every message, and your suggestions directly influence our roadmap.
+
+With love ❤️  
+**BookrHub Team**`,
+    },
     "new-booking-flow": {
       date: "April 3, 2026",
       category: "New Feature",
@@ -306,6 +412,112 @@ Start building your customer database today!`,
   },
 
   es: {
+    "new-languages-customer-booking": {
+      date: "16 de Abril, 2026",
+      category: "Nueva Función",
+      title: "Reserva en Tu Idioma: 6 Nuevos Idiomas para Reservas de Clientes",
+      excerpt:
+        "Ahora tus clientes pueden reservar citas en su idioma preferido. Soporte para portugués, francés, holandés, ruso e italiano añadido al flujo de reserva.",
+      images: [
+        {
+          src: "/booking-v1-languages.png",
+          alt: "Flujo de reserva V1 con selector de idioma",
+          caption: "Flujo de reserva clásico - clientes seleccionan su idioma preferido",
+        },
+        {
+          src: "/booking-v2-languages.png",
+          alt: "Flujo de reserva V2 con selector de idioma",
+          caption: "Nuevo flujo de reserva - experiencia multilingüe sin interrupciones",
+        },
+      ],
+      content: `¡Estamos encantados de anunciar que tus clientes ahora pueden reservar citas en su idioma nativo! Hemos escuchado sus comentarios y añadido soporte para 7 nuevos idiomas en la experiencia de reserva del cliente.
+
+## Nuevos Idiomas Soportados
+
+- 🇧🇷 **Portugués (Brasil)** — Llega a millones de clientes brasileños
+- 🇵🇹 **Portugués (Portugal)** — Sirve a clientes portugueses
+- 🇫🇷 **Francés** — Sirve a tus clientes francófonos con facilidad
+- 🇳🇱 **Holandés** — Perfecto para negocios en los Países Bajos y Bélgica
+- 🇷🇺 **Ruso** — Amplía tu alcance a mercados de habla rusa
+- 🇮🇹 **Italiano** — Encanta a tus clientes italianos
+
+Combinado con nuestro soporte existente de **Inglés** y **Español**, ahora puedes atender a clientes de todo el mundo en su idioma preferido.
+
+## Cómo Funciona
+
+Tus clientes verán un selector de idioma en la página de reserva. Pueden elegir su idioma preferido, y toda la experiencia de reserva — desde la selección de servicio hasta la confirmación — se mostrará en su idioma elegido.
+
+### Para Tus Clientes
+
+- **Experiencia Nativa** — Los clientes ven la interfaz de reserva en su idioma
+- **Sin Confusión** — Traducciones claras y naturales sin barreras lingüísticas
+- **Confianza Integrada** — Los clientes se sienten más cómodos reservando cuando entienden cada detalle
+
+### Para Tu Negocio
+
+- **Idioma de Empresa Sin Cambios** — Tu panel de administración, configuraciones y comunicaciones comerciales permanecen en el idioma de empresa configurado
+- **Detección Automática** — Los nuevos visitantes ven la página de reserva en el idioma de su navegador (si está soportado)
+- **Cambio Fácil** — Los clientes pueden seleccionar manualmente su idioma preferido en cualquier momento
+
+## Entrega Inteligente de Emails
+
+Entendemos que la comunicación clara es clave para dirigir un negocio exitoso. Así es cómo funciona nuestro sistema de emails:
+
+### Emails para el Cliente (En Su Idioma)
+
+Cuando un cliente reserva una cita, todas las comunicaciones que reciben serán en su **idioma de reserva seleccionado**:
+
+- 📧 **Confirmación de Reserva** — Enviada en el idioma del cliente
+- 📧 **Emails de Recordatorio** — Enviados en el idioma del cliente
+- 📧 **Notificaciones de Reprogramación** — Enviadas en el idioma del cliente
+- 📧 **Confirmaciones de Cancelación** — Enviadas en el idioma del cliente
+
+### Tus Emails de Negocio (En Tu Idioma)
+
+Todos los emails y notificaciones enviados a **ti y tu equipo** siempre serán en tu **idioma de empresa configurado**:
+
+- 📧 **Alertas de Nueva Reserva** — En tu idioma de empresa
+- 📧 **Notificaciones al Personal** — En tu idioma de empresa
+- 📧 **Comunicaciones de Administración** — En tu idioma de empresa
+
+Esto asegura que nunca pierdas información importante mientras tus clientes disfrutan de la mejor experiencia en su idioma nativo.
+
+## Basado en Tus Comentarios
+
+Esta función fue desarrollada basándose en comentarios directos de negocios como el tuyo. Muchos de ustedes nos dijeron:
+
+> *"Mis clientes vienen de toda Europa y tienen dificultades con el proceso de reserva en inglés."*
+
+> *"Pierdo reservas porque la gente no se siente cómoda proporcionando sus datos en un idioma que no entiende."*
+
+> *"Me encantaría expandirme a clientes brasileños pero necesitan reservar en portugués."*
+
+¡Te escuchamos! Nuestro equipo trabajó para crear una solución que elimina las barreras lingüísticas sin complicar tu flujo de trabajo. Tu negocio continúa operando como siempre, mientras tus clientes disfrutan de una experiencia perfecta en su idioma preferido.
+
+## Cómo Empezar
+
+### Para Usuarios del Plan Business
+
+La nueva función de idiomas ya está habilitada en tu página de reserva. Los clientes que visiten tu flujo de reserva verán el selector de idioma automáticamente.
+
+### Para Todos los Planes
+
+Si estás en un plan diferente, esta función estará disponible cuando actualices a Business.
+
+## Queremos Escucharte
+
+Este es solo el comienzo. Estamos comprometidos a mejorar continuamente BookrHub basándonos en tus necesidades y las de tus clientes.
+
+**Déjanos un mensaje** — Cuéntanos:
+- ¿Qué idiomas te gustaría ver a continuación?
+- ¿Cómo ha ayudado el soporte multilingüe a tu negocio?
+- ¿Algún comentario sobre las traducciones actuales?
+
+Nuestro equipo lee cada mensaje, y tus sugerencias influyen directamente en nuestra hoja de ruta.
+
+Con amor ❤️  
+**Equipo BookrHub**`,
+    },
     "new-booking-flow": {
       date: "3 de Abril, 2026",
       category: "Nueva Función",

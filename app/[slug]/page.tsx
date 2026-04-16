@@ -6,6 +6,12 @@ import { getDictionary, getUpdate, getUpdates } from "../lib/dictionary";
 
 const BASE_URL = "https://www.bookrhub.com";
 
+function formatInlineMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.*?)\*/g, "<em>$1</em>");
+}
+
 export async function generateStaticParams() {
   const updatesEn = getUpdates("en");
   return Object.keys(updatesEn).map((slug) => ({ slug }));
@@ -135,10 +141,9 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
                 <ul key={index} className="list-disc pl-6 text-[#57534e]">
                   {items.map((item, i) => {
                     const text = item.replace("- ", "");
-                    const formatted = text.replace(
-                      /\*\*(.*?)\*\*/g,
-                      "<strong>$1</strong>"
-                    );
+                    const formatted = text
+                      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+                      .replace(/\*(.*?)\*/g, "<em>$1</em>");
                     return (
                       <li key={i}>
                         <span dangerouslySetInnerHTML={{ __html: formatted }} />
@@ -148,18 +153,24 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
                 </ul>
               );
             }
-            if (paragraph.startsWith("**") && paragraph.includes("**")) {
-              const formatted = paragraph.replace(
-                /\*\*(.*?)\*\*/g,
-                "<strong>$1</strong>"
-              );
+            if (paragraph.startsWith("> ")) {
+              const quoteText = paragraph.replace(/^> /, "");
               return (
-                <p key={index} className="text-[#57534e]">
-                  <span dangerouslySetInnerHTML={{ __html: formatted }} />
+                <blockquote
+                  key={index}
+                  className="my-6 border-l-4 border-[#4f46e5] pl-4 italic text-[#78716c]"
+                  dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(quoteText) }}
+                />
+              );
+            }
+            if (paragraph.trim()) {
+              return (
+                <p key={index} className="text-[#57534e] leading-relaxed">
+                  <span dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(paragraph) }} />
                 </p>
               );
             }
-            return <p key={index} className="text-[#57534e]">{paragraph}</p>;
+            return null;
           })}
           {"images" in update && update.images && update.images.length > 0 && (
             <div className="my-8 space-y-6">

@@ -409,6 +409,72 @@ The customer management feature is automatically enabled for all companies. Simp
 
 Start building your customer database today!`,
     },
+
+    // August 2026 - Custom Booking Labels
+    "custom-booking-labels": {
+      date: "August 5, 2026",
+      category: "New Feature",
+      title: "Custom Booking Labels: Use Your Own Wording",
+      excerpt:
+        "Replace 'Service' and 'Specialist' with your own wording on the booking page, from 'Select a Class' to each team member's title.",
+      content: `We're excited to announce custom booking labels for the new booking flow. Now you can replace the generic "Service" and "Specialist" wording with your own terminology, so the booking page speaks your business's language.
+
+## What's New
+
+Two new settings let you customize how services and team members are presented to customers:
+
+- **Service Label** — Change "Select a Service" to match your wording, like "Select a Class"
+- **Specialist Label** — Change "Choose a Specialist" and "Any Specialist" to your wording, like "Choose a Coach" and "Any Coach"
+
+Plus, each team member's **title** now appears under their name on the booking page instead of the generic "Specialist" label.
+
+## Where You'll See It
+
+The custom labels replace the default wording throughout the booking flow:
+
+- **Step 1** — The service selection heading becomes "Select a [Your Label]"
+- **Step 2** — The specialist heading becomes "Choose a [Your Label]" and the "Any Specialist" option becomes "Any [Your Label]"
+- **Member cards** — Each team member shows their individual title (e.g. "Senior Barber", "Stylist") under their name
+- **Booking summary** — The small section labels in the details and payment steps use your custom wording
+
+## How to Set It Up
+
+### Booking Labels
+
+1. Go to **Settings > My Company**
+2. Find the **Booking Labels** section
+3. Enter your **Service Label** (e.g. "Class") and **Specialist Label** (e.g. "Coach")
+4. Click **Save Changes**
+
+Leave a field empty to keep the default translated wording.
+
+### Team Member Titles
+
+1. Go to **Team** in your admin panel
+2. Edit a team member
+3. Enter a **Title** (e.g. "Senior Barber", "Stylist", "Trainer")
+4. Save the member
+
+## Smart Grammar for English
+
+We automatically handle English articles: enter "Class" and customers see "Select a Class", but enter "Hour" and they see "Select an Hour". In all other languages the headings use natural, article-free phrasing, so they read correctly no matter the label.
+
+## Two Things to Know
+
+- **Labels are not translated.** Your custom labels appear exactly as you enter them in every language your customers book in. The default wording, on the other hand, is fully translated.
+- **Available on Business plans.** The new booking flow (where these labels appear) is a Business plan feature.
+
+## What Problem This Solves
+
+Every business speaks its own language. A fitness studio sells "classes" and "coaches", a beauty salon books "treatments" with "technicians", and a barbershop schedules "cuts" with "barbers". Before, your customers saw generic "Service" and "Specialist" wording that didn't match how you describe your work. Now the booking page matches your brand — which makes it feel like your own site and helps more customers complete a booking with confidence.
+
+## Getting Started
+
+Custom labels are available today for all Business plan users. Set them up in **Settings > My Company** and add titles to your team members in **Team**. Try it on your booking page and make the booking experience truly yours.
+
+With love ❤️  
+**BookrHub Team**`,
+    },
   },
 
   es: {
@@ -779,6 +845,72 @@ La función de gestión de clientes está habilitada automáticamente para todas
 4. Usa la búsqueda al crear nuevas reservas
 
 ¡Comienza a construir tu base de datos de clientes hoy!`,
+    },
+
+    // August 2026 - Custom Booking Labels Spanish
+    "custom-booking-labels": {
+      date: "5 de Agosto, 2026",
+      category: "Nueva Función",
+      title: "Etiquetas de Reserva Personalizadas: Tus Palabras",
+      excerpt:
+        "Reemplaza 'Servicio' y 'Especialista' con tus propias palabras en la página de reservas, desde 'Selecciona una Clase' hasta el título de cada miembro.",
+      content: `¡Estamos emocionados de anunciar las etiquetas de reserva personalizadas para el nuevo flujo de reservas! Ahora puedes reemplazar las palabras genéricas "Servicio" y "Especialista" con tu propia terminología, para que la página de reservas hable el idioma de tu negocio.
+
+## Qué Hay de Nuevo
+
+Dos nuevas configuraciones te permiten personalizar cómo se presentan los servicios y los miembros del equipo a los clientes:
+
+- **Etiqueta de Servicio** — Cambia "Selecciona un Servicio" para que coincida con tu terminología, como "Selecciona una Clase"
+- **Etiqueta de Especialista** — Cambia "Elige un Especialista" y "Cualquier Especialista" a tu terminología, como "Elige un Entrenador" y "Cualquier Entrenador"
+
+Además, el **título** de cada miembro del equipo ahora aparece debajo de su nombre en la página de reservas en lugar de la etiqueta genérica "Especialista".
+
+## Dónde Lo Verás
+
+Las etiquetas personalizadas reemplazan el texto predeterminado en todo el flujo de reservas:
+
+- **Paso 1** — El encabezado de selección de servicio se convierte en "Selecciona [Tu Etiqueta]"
+- **Paso 2** — El encabezado de especialista se convierte en "Elige [Tu Etiqueta]" y la opción "Cualquier Especialista" se convierte en "Cualquier [Tu Etiqueta]"
+- **Tarjetas de miembros** — Cada miembro del equipo muestra su título individual (ej. "Barbero Senior", "Estilista") debajo de su nombre
+- **Resumen de reserva** — Las pequeñas etiquetas de sección en los pasos de detalles y pago usan tu terminología personalizada
+
+## Cómo Configurarlo
+
+### Etiquetas de Reserva
+
+1. Ve a **Configuración > Mi Empresa**
+2. Busca la sección **Etiquetas de Reserva**
+3. Ingresa tu **Etiqueta de Servicio** (ej. "Clase") y **Etiqueta de Especialista** (ej. "Entrenador")
+4. Haz clic en **Guardar Cambios**
+
+Deja un campo vacío para mantener el texto predeterminado traducido.
+
+### Títulos de Miembros del Equipo
+
+1. Ve a **Trabajadores** en tu panel de administración
+2. Edita un miembro del equipo
+3. Ingresa un **Título** (ej. "Barbero Senior", "Estilista", "Entrenador")
+4. Guarda el miembro
+
+## Gramática Inteligente en Inglés
+
+Manejamos automáticamente los artículos en inglés: ingresa "Class" y los clientes verán "Select a Class", pero ingresa "Hour" y verán "Select an Hour". En todos los demás idiomas, los encabezados usan una redacción natural sin artículos, por lo que se leen correctamente sin importar la etiqueta.
+
+## Dos Cosas a Saber
+
+- **Las etiquetas no se traducen.** Tus etiquetas personalizadas aparecen exactamente como las ingresas en todos los idiomas en que reservan tus clientes. El texto predeterminado, por otro lado, está completamente traducido.
+- **Disponible en planes Business.** El nuevo flujo de reservas (donde aparecen estas etiquetas) es una función del plan Business.
+
+## Qué Problema Resuelve
+
+Cada negocio habla su propio idioma. Un estudio de fitness vende "clases" y "entrenadores", un salón de belleza agenda "tratamientos" con "técnicos", y una barbería programa "cortes" con "barberos". Antes, tus clientes veían las palabras genéricas "Servicio" y "Especialista" que no coincidían con cómo describes tu trabajo. Ahora la página de reservas coincide con tu marca — lo que hace que se sienta como tu propio sitio y ayuda a más clientes a completar una reserva con confianza.
+
+## Cómo Empezar
+
+Las etiquetas personalizadas están disponibles hoy para todos los usuarios del plan Business. Configúralas en **Configuración > Mi Empresa** y agrega títulos a tus miembros del equipo en **Trabajadores**. Pruébalas en tu página de reservas y haz que la experiencia de reserva sea realmente tuya.
+
+Con amor ❤️  
+**Equipo BookrHub**`,
     },
   },
 };

@@ -105,9 +105,11 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
             </Link>
           </div>
           <div className="flex items-center gap-3">
-            <span className="inline-flex items-center rounded-full bg-[#eef2ff] px-2.5 py-0.5 text-xs font-medium text-[#4f46e5]">
-              {dict.categories[update.category as keyof typeof dict.categories]}
-            </span>
+            {(update.iso || "") > "2026-04-01" && (
+              <span className="inline-flex items-center rounded-full bg-[#eef2ff] px-2.5 py-0.5 text-xs font-medium text-[#4f46e5]">
+                {dict.categories[update.category as keyof typeof dict.categories]}
+              </span>
+            )}
             <time className="text-sm text-[#a8a29e]">{update.date}</time>
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-[#1c1917]">

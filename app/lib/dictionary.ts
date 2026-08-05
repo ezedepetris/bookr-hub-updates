@@ -27,8 +27,8 @@ export const dictionaries = {
     newFeature: "Nueva Función",
     improvement: "Mejora",
     categories: {
-      "New Feature": "Nueva Función",
-      Improvement: "Mejora",
+      "Nueva Función": "Nueva Función",
+      Mejora: "Mejora",
     },
     footer: "¿Quieres estar al día?",
     localeSwitch: "English",
@@ -43,6 +43,7 @@ export const updates = {
   en: {
     "new-languages-customer-booking": {
       date: "April 16, 2026",
+      iso: "2026-04-16",
       category: "New Feature",
       title: "Book in Your Language: 6 New Languages for Customer Bookings",
       excerpt:
@@ -149,6 +150,7 @@ With love ❤️
     },
     "new-booking-flow": {
       date: "April 3, 2026",
+      iso: "2026-04-03",
       category: "New Feature",
       title: "Brand New Booking Experience for Business Plans",
       excerpt:
@@ -246,6 +248,7 @@ If you're on the Business plan, the new booking flow is automatically enabled. C
     },
     "split-opening-hours": {
       date: "March 24, 2026",
+      iso: "2026-03-24",
       category: "New Feature",
       title: "Set Multiple Opening Hours Per Day with Split Shifts",
       excerpt:
@@ -298,6 +301,7 @@ Go to Settings > Company Hours and click "Add Shift" to create multiple time blo
     },
     "online-payments-launch": {
       date: "December 15, 2025",
+      iso: "2025-12-15",
       category: "New Feature",
       title: "Now Accepting MercadoPago for Online Payments in Latin America",
       excerpt:
@@ -342,6 +346,7 @@ Enable payments in Settings > Payments. Connect your MercadoPago account, config
     // April 2026 - Customer Management
     "customer-management": {
       date: "April 1, 2026",
+      iso: "2026-04-01",
       category: "New Feature",
       title: "New Customer Management System",
       excerpt:
@@ -413,6 +418,7 @@ Start building your customer database today!`,
     // August 2026 - Custom Booking Labels
     "custom-booking-labels": {
       date: "August 5, 2026",
+      iso: "2026-08-05",
       category: "New Feature",
       title: "Custom Booking Labels: Use Your Own Wording",
       excerpt:
@@ -480,6 +486,7 @@ With love ❤️
   es: {
     "new-languages-customer-booking": {
       date: "16 de Abril, 2026",
+      iso: "2026-04-16",
       category: "Nueva Función",
       title: "Reserva en Tu Idioma: 6 Nuevos Idiomas para Reservas de Clientes",
       excerpt:
@@ -586,6 +593,7 @@ Con amor ❤️
     },
     "new-booking-flow": {
       date: "3 de Abril, 2026",
+      iso: "2026-04-03",
       category: "Nueva Función",
       title: "Nueva Experiencia de Reserva para Planes Business",
       excerpt:
@@ -683,6 +691,7 @@ Si estás en el plan Business, el nuevo flujo de reserva está habilitado autom�
     },
     "split-opening-hours": {
       date: "24 de Marzo, 2026",
+      iso: "2026-03-24",
       category: "Nueva Función",
       title: "Configura Múltiples Horarios de Apertura por Día con Turnos Divididos",
       excerpt:
@@ -735,6 +744,7 @@ Ve a Configuración > Horarios de la Empresa y haz clic en "Agregar Turno" para 
     },
     "online-payments-launch": {
       date: "15 de Diciembre, 2025",
+      iso: "2025-12-15",
       category: "Nueva Función",
       title: "Ahora Aceptamos MercadoPago para Pagos Online en Latinoamérica",
       excerpt:
@@ -779,6 +789,7 @@ Habilita pagos en Configuración > Pagos. Conecta tu cuenta de MercadoPago, conf
     // April 2026 - Customer Management Spanish
     "customer-management": {
       date: "1 de Abril, 2026",
+      iso: "2026-04-01",
       category: "Nueva Función",
       title: "Nuevo Sistema de Gestión de Clientes",
       excerpt:
@@ -850,6 +861,7 @@ La función de gestión de clientes está habilitada automáticamente para todas
     // August 2026 - Custom Booking Labels Spanish
     "custom-booking-labels": {
       date: "5 de Agosto, 2026",
+      iso: "2026-08-05",
       category: "Nueva Función",
       title: "Etiquetas de Reserva Personalizadas: Tus Palabras",
       excerpt:

@@ -77,7 +77,7 @@ export default async function Changelog({ searchParams }: PageProps) {
               : "pt-6 pb-12 border-b border-[#e7e5e4]"}
           >
             <div className="mb-4 flex items-center gap-3">
-              {(update.iso || "") > "2026-04-01" && (
+              {index < 3 && (
                 <span className="inline-flex items-center rounded-full bg-[#eef2ff] px-2.5 py-0.5 text-xs font-medium text-[#4f46e5]">
                   {dict.categories[update.category as keyof typeof dict.categories]}
                 </span>

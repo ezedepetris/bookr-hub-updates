@@ -481,6 +481,62 @@ Custom labels are available today for all Business plan users. Set them up in **
 With love ❤️  
 **BookrHub Team**`,
     },
+    "multiple-bookings-per-slot": {
+      date: "August 14, 2026",
+      iso: "2026-08-14",
+      category: "New Feature",
+      title: "Multiple Bookings Per Slot: Classes, Workshops & Group Sessions",
+      excerpt:
+        "Allow multiple customers to book the same time slot for classes, workshops, and group sessions. Set a capacity, and the calendar groups them automatically.",
+      content: `One of the most requested features is here. You can now accept multiple bookings for the same time slot — perfect for businesses that run classes, workshops, group sessions, or any service where several customers share an appointment.
+
+## Why We Built This
+
+This has been a long time coming. Businesses offering group services told us over and over:
+
+> *"I run fitness classes and need 10 people to book the same hour. I was creating fake services or tracking attendance in a spreadsheet."*
+
+> *"My spa offers workshops for up to 8 people. Without multiple bookings I had to turn customers away."*
+
+> *"I teach small cooking sessions. I need people to book the same slot independently."*
+
+We listened. Multiple bookings per slot is now available on the **Business plan**.
+
+## How It Works
+
+When creating or editing a service, enable **Multiple bookings per slot** and set the maximum capacity — anywhere from 2 to 999 participants.
+
+- **Independent bookings** — Each customer books their own spot, no waiting for a group to fill
+- **Automatic capacity tracking** — The system knows how many seats are left and stops accepting bookings when the slot is full
+- **Same booking flow** — Your customers see available time slots with remaining seats ("1 spot left", "8 spots left") and book as normal
+- **Any specialist supported** — Available across the "any specialist" flow, so customers don't need to pick a specific staff member for a class
+
+## Calendar Grouping
+
+When several customers book the same class, the admin calendar groups them into a single event block with a **×3** badge showing the participant count.
+
+- **Desktop**: Hover over a grouped event to see all participants and their booking status
+- **Mobile/Desktop tap**: Click the grouped event to open a participant picker — tap any name to open that customer's booking details and edit modal
+
+Single bookings (even on multi-booking services) display normally, so a class with just one sign-up looks like any other appointment.
+
+## Payment Protection
+
+If you charge for bookings, each participant pays separately and gets their own payment confirmation. To prevent abandoned bookings from holding seats indefinitely, unpaid bookings are **automatically cancelled after 10 minutes** — freeing the spot for the next customer. A countdown timer on the payment page shows customers exactly how much time they have left.
+
+## Getting Started
+
+Multiple bookings per slot is available now for all **Business plan** users:
+
+1. Go to **Services** and create or edit a service
+2. Toggle **Multiple bookings per slot** and set the max capacity
+3. That's it — your customers can now book the same time slot independently
+
+If you're on the **Independent plan**, you'll see a prompt to upgrade when you reach the multiple bookings option. Upgrade to Business to unlock classes, workshops, and all group-booking features.
+
+With love ❤️  
+**BookrHub Team**`,
+    },
   },
 
   es: {
@@ -920,6 +976,62 @@ Cada negocio habla su propio idioma. Un estudio de fitness vende "clases" y "ent
 ## Cómo Empezar
 
 Las etiquetas personalizadas están disponibles hoy para todos los usuarios del plan Business. Configúralas en **Configuración > Mi Empresa** y agrega títulos a tus miembros del equipo en **Trabajadores**. Pruébalas en tu página de reservas y haz que la experiencia de reserva sea realmente tuya.
+
+Con amor ❤️  
+**Equipo BookrHub**`,
+    },
+    "multiple-bookings-per-slot": {
+      date: "14 de Agosto, 2026",
+      iso: "2026-08-14",
+      category: "Nueva Función",
+      title: "Reservas Múltiples por Horario: Clases, Talleres y Sesiones Grupales",
+      excerpt:
+        "Permite que varios clientes reserven el mismo horario para clases, talleres y sesiones grupales. Define una capacidad y el calendario las agrupa automáticamente.",
+      content: `Una de las funciones más solicitadas ya está aquí. Ahora podés aceptar múltiples reservas para el mismo horario — perfecto para negocios que ofrecen clases, talleres, sesiones grupales, o cualquier servicio donde varios clientes comparten una cita.
+
+## Por Qué Construimos Esto
+
+Esto venía pidiéndose hace tiempo. Los negocios que ofrecen servicios grupales nos dijeron una y otra vez:
+
+> *"Doy clases de fitness y necesito que 10 personas reserven la misma hora. Estaba creando servicios falsos o registrando la asistencia en una hoja de cálculo."*
+
+> *"Mi spa ofrece talleres para hasta 8 personas. Sin reservas múltiples tenía que rechazar clientes."*
+
+> *"Enseño sesiones de cocina en grupos chicos. Necesito que varias personas reserven el mismo horario de forma independiente."*
+
+Te escuchamos. Las reservas múltiples por horario ya están disponibles en el **plan Business**.
+
+## Cómo Funciona
+
+Al crear o editar un servicio, activá **Reservas múltiples por horario** y definí la capacidad máxima — desde 2 hasta 999 participantes.
+
+- **Reservas independientes** — Cada cliente reserva su propio lugar, sin esperar a que se complete un grupo
+- **Control automático de capacidad** — El sistema sabe cuántos lugares quedan y deja de aceptar reservas cuando el horario está lleno
+- **Mismo flujo de reserva** — Tus clientes ven los horarios disponibles con los lugares restantes ("1 lugar disponible", "8 lugares disponibles") y reservan como siempre
+- **Cualquier especialista soportado** — Disponible en el flujo de "cualquier especialista", así los clientes no necesitan elegir un miembro del equipo específico para una clase
+
+## Agrupación en el Calendario
+
+Cuando varios clientes reservan la misma clase, el calendario de administración las agrupa en un solo bloque de evento con una insignia **×3** que muestra la cantidad de participantes.
+
+- **Escritorio**: Pasá el cursor sobre un evento agrupado para ver todos los participantes y su estado de reserva
+- **Móvil/Escritorio (tap)**: Tocá el evento agrupado para abrir un selector de participantes — tocá cualquier nombre para abrir los detalles de reserva de ese cliente y el modal de edición
+
+Las reservas individuales (incluso en servicios de reservas múltiples) se muestran normalmente, así que una clase con una sola inscripción se ve como cualquier otra cita.
+
+## Protección de Pagos
+
+Si cobrás por tus reservas, cada participante paga por separado y recibe su propia confirmación de pago. Para evitar que reservas abandonadas retengan lugares indefinidamente, las reservas no pagadas se **cancelan automáticamente después de 10 minutos** — liberando el lugar para el siguiente cliente. Un temporizador de cuenta regresiva en la página de pago muestra a los clientes exactamente cuánto tiempo les queda.
+
+## Cómo Empezar
+
+Las reservas múltiples por horario ya están disponibles para todos los usuarios del **plan Business**:
+
+1. Andá a **Servicios** y creá o editá un servicio
+2. Activá **Reservas múltiples por horario** y definí la capacidad máxima
+3. Eso es todo — tus clientes ya pueden reservar el mismo horario de forma independiente
+
+Si estás en el **plan Independent**, verás un aviso para actualizar cuando llegues a la opción de reservas múltiples. Actualizá a Business para desbloquear clases, talleres y todas las funciones de reservas grupales.
 
 Con amor ❤️  
 **Equipo BookrHub**`,

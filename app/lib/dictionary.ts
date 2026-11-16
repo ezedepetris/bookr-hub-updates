@@ -41,6 +41,66 @@ export function getDictionary(locale: string) {
 
 export const updates = {
   en: {
+    "bookrhub-mobile-app-ios-android": {
+      date: "November 16, 2026",
+      iso: "2026-11-16",
+      category: "New Feature",
+      title: "BookrHub Is Now on iPhone and Android",
+      excerpt:
+        "The BookrHub app is live on the App Store and Google Play. Get instant alerts when a client books or cancels and manage your day from your phone.",
+      images: [
+        {
+          src: "/mobile-app-hero.png",
+          alt: "The BookrHub app on two iPhones",
+          caption: "BookrHub, now as a native app for iPhone and Android",
+        },
+        {
+          src: "/mobile-app-notifications-en.png",
+          alt: "iPhone lock screen with BookrHub notifications for a new booking and a cancellation",
+          caption: "Push notifications the moment a client books or cancels",
+        },
+        {
+          src: "/mobile-app-screens.png",
+          alt: "BookrHub app screens: calendar, booking page and payment settings",
+          caption: "Your calendar, your booking page and your payment settings, all in the app",
+        },
+      ],
+      content: `The BookrHub app is here. You can now run your salon, spa or barbershop from your phone, with the native app for **iPhone** and **Android**.
+
+## Download the App
+
+- **iPhone and iPad:** [Download on the App Store](https://apps.apple.com/app/bookrhub/id6818713016)
+- **Android:** [Get it on Google Play](https://play.google.com/store/apps/details?id=com.bookrhub.admin)
+
+The app is free to download. Sign in with the same email and password you use on the web.
+
+## Know the Moment Someone Books
+
+This is the feature you asked for most. When a client books online or cancels, the team member assigned to that appointment gets a **push notification on their phone right away**. No more refreshing the calendar or finding out at the last minute.
+
+## What You Can Do in the App
+
+- **Instant notifications** for new bookings and cancellations
+- **Today's schedule at a glance**, with day, week and agenda views
+- **Create, move and cancel bookings** in a few taps
+- **All your customers in one place**, with their contact details and booking history
+- **Manage your booking page, services, team and payment settings** wherever you are
+
+## Who the App Is For
+
+The BookrHub app is for **business owners and their team**. Your clients don't need to download anything: they keep booking on your BookrHub page from any browser, exactly as they do today.
+
+## Getting Started
+
+- Download BookrHub from the App Store or Google Play.
+- Sign in with your BookrHub account.
+- Allow notifications when asked, so you never miss a booking.
+
+Each team member who signs in on their own phone gets notified about their own appointments.
+
+With love ❤️  
+**The BookrHub Team**`,
+    },
     "new-languages-customer-booking": {
       date: "April 16, 2026",
       iso: "2026-04-16",
@@ -540,6 +600,66 @@ With love ❤️
   },
 
   es: {
+    "bookrhub-mobile-app-ios-android": {
+      date: "16 de Noviembre, 2026",
+      iso: "2026-11-16",
+      category: "Nueva Función",
+      title: "BookrHub Ya Está en iPhone y Android",
+      excerpt:
+        "La app de BookrHub ya está en el App Store y Google Play. Recibe avisos al instante cuando un cliente reserva o cancela y gestiona tu día desde el móvil.",
+      images: [
+        {
+          src: "/mobile-app-hero.png",
+          alt: "La app de BookrHub en dos iPhones",
+          caption: "BookrHub, ahora como app nativa para iPhone y Android",
+        },
+        {
+          src: "/mobile-app-notifications-es.png",
+          alt: "Pantalla de bloqueo de un iPhone con notificaciones de BookrHub de una nueva reserva y una cancelación",
+          caption: "Notificaciones push en el momento en que un cliente reserva o cancela",
+        },
+        {
+          src: "/mobile-app-screens.png",
+          alt: "Pantallas de la app de BookrHub: calendario, página de reservas y métodos de pago",
+          caption: "Tu calendario, tu página de reservas y tus métodos de pago, todo en la app",
+        },
+      ],
+      content: `La app de BookrHub ya está aquí. Ahora puedes gestionar tu peluquería, spa o barbería desde el móvil, con la app nativa para **iPhone** y **Android**.
+
+## Descarga la App
+
+- **iPhone y iPad:** [Descárgala en el App Store](https://apps.apple.com/app/bookrhub/id6818713016)
+- **Android:** [Disponible en Google Play](https://play.google.com/store/apps/details?id=com.bookrhub.admin)
+
+La app es gratuita. Inicia sesión con el mismo email y contraseña que usas en la web.
+
+## Entérate en el Momento en que Alguien Reserva
+
+Es la función que más nos pidieron. Cuando un cliente reserva online o cancela, el miembro del equipo asignado a ese turno recibe una **notificación push en su móvil al instante**. Se acabó refrescar el calendario o enterarse a último momento.
+
+## Qué Puedes Hacer en la App
+
+- **Notificaciones al instante** de nuevas reservas y cancelaciones
+- **Tu agenda del día de un vistazo**, con vistas de día, semana y agenda
+- **Crear, mover y cancelar reservas** en pocos toques
+- **Todos tus clientes en un solo lugar**, con sus datos de contacto e historial de reservas
+- **Gestionar tu página de reservas, servicios, equipo y métodos de pago** desde donde estés
+
+## Para Quién Es la App
+
+La app de BookrHub es para **los dueños de negocios y su equipo**. Tus clientes no necesitan descargar nada: siguen reservando en tu página de BookrHub desde cualquier navegador, igual que hoy.
+
+## Cómo Empezar
+
+- Descarga BookrHub desde el App Store o Google Play.
+- Inicia sesión con tu cuenta de BookrHub.
+- Permite las notificaciones cuando te lo pida, para no perderte ninguna reserva.
+
+Cada miembro del equipo que inicie sesión en su propio móvil recibe avisos de sus propios turnos.
+
+Con amor ❤️  
+**Equipo BookrHub**`,
+    },
     "new-languages-customer-booking": {
       date: "16 de Abril, 2026",
       iso: "2026-04-16",

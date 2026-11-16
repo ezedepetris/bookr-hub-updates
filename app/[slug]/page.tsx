@@ -9,7 +9,11 @@ const BASE_URL = "https://www.bookrhub.com";
 function formatInlineMarkdown(text: string): string {
   return text
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.*?)\*/g, "<em>$1</em>");
+    .replace(/\*(.*?)\*/g, "<em>$1</em>")
+    .replace(
+      /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener" class="font-medium text-[#2B7FFF] underline underline-offset-2">$1</a>'
+    );
 }
 
 export async function generateStaticParams() {
@@ -143,9 +147,7 @@ export default async function UpdatePage({ params, searchParams }: PageProps) {
                 <ul key={index} className="list-disc pl-6 text-[#57534e]">
                   {items.map((item, i) => {
                     const text = item.replace("- ", "");
-                    const formatted = text
-                      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                      .replace(/\*(.*?)\*/g, "<em>$1</em>");
+                    const formatted = formatInlineMarkdown(text);
                     return (
                       <li key={i}>
                         <span dangerouslySetInnerHTML={{ __html: formatted }} />
